@@ -2667,6 +2667,7 @@ character_event = {
 			clr_character_flag = vampire_feed_turn
 			clr_character_flag = vampire_feed_minor
 			clr_character_flag = vf_spread_illness
+			clr_character_flag = vf_tainted_blood
 		}
 	}
 }
