@@ -2393,10 +2393,16 @@ character_event = {
 			limit = { has_character_flag = vampire_feed_suspected }
 			if = {
 				limit = { trait = known_vampire }
-				hidden_tooltip = {
-					any_realm_character = {
-						opinion = { who = ROOT modifier = suspect_of_murder years = 10 }
-					}
+				if = {
+				    limit = { has_character_flag = vampire_feed_kill }
+                    hidden_tooltip = {
+                        any_realm_character = {
+                            limit = {
+                                NOT = { trait = vampire }
+                            }
+                            opinion = { who = ROOT modifier = suspect_of_murder years = 10 }
+                        }
+                    }
 				}
 			}
 			else = {
