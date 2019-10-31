@@ -12,7 +12,7 @@ vampire = {
 	immortal = yes
 	hidden_from_others = yes
 
-	same_opinion = 10
+	same_opinion = 30
 	opposite_opinion = -30
 	
 	diplomacy = 2
